@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	background: #9dd2ea;
+	background: radial-gradient(circle, #9dd2ea 20%, #fff);
+	background-size: cover;
+}
+
+.heading {
+    text-align: center;
+	font-family: 'Ravi Prakash', cursive;
+}
+
+#calculator {
+	width: 301px;
+	height: auto;
+	margin: 45px auto;
+	padding: 20px 20px 9px;
+	background: #b2dfdc;
+	border-radius: 0px;
+	box-shadow: 0px 4px #009788, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.top span.clear {
+	float: left;
+}
+
+.top .screen {
+	height: 60px;
+	width: 192px;
+	float: left;
+	padding: 0 10px;
+	background: #ffffff;
+	border-radius: 30px;
+	font-size: 25px;
+	line-height: 40px;
+	color: #000000;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+.keys, .top {overflow: hidden;}
+
+.keys span, .top span.clear {
+	float: left;
+	display: block;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	font-size: 20px;
+	height: 60px;
+    width: 60px;
+	background: #009788;
+	border-radius: 30px;
+	margin: 0 7px 11px 0;
+	color: #ffffff;
+	line-height: 60px;
+	text-align: center;
+	user-select: none;
+	transition: all 0.2s ease;
+}
+
+.keys span.operator {
+	background: #4cb5ae;
+	margin-right: 0;
+}
+
+.keys span.equal {
+	background: #009788;
+	color: #ffffff;
+}
+
+.top span.clear {
+	background: #f68991;
+	color: #ffffff;
+}
+
+.keys span:hover {
+	background: #4cb5ae;
+	box-shadow: 0px 4px #009788;
+	color: white;
+}
+
+.keys span.equal:hover {
+	background: #f68991;
+	box-shadow: 0px 4px #d3545d;
+	color: #ffffff;
+}
+
+.top span.clear:hover {
+	background: #d3545d;
+	box-shadow: 0px 4px #f68991;
+	color: white;
+}
+
+.keys span:active {
+	box-shadow: 0px 0px #009788;
+	top: 4px;
+}
+
+.keys span.equal:active {
+	box-shadow: 0px 0px #d3545d;
+	top: 4px;
+}
+
+.top span.clear:active {
+	top: 4px;
+	box-shadow: 0px 0px #f68991;
+}
